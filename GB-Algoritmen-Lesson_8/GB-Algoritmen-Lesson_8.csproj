@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibraryFastDecisions">
-      <HintPath>..\..\GB-CSharp-Level1-Lesson_6\1_PresentationFuncDelegates\Properties\LibraryFastDecisions.dll</HintPath>
+    <Reference Include="LibraryFastDecisions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\GB-Algoritmen-Lesson_5\GB-Algoritmen-Lesson_5\Properties\LibraryFastDecisions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,11 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additionally\BinaryTree.cs" />
+    <Compile Include="Additionally\Save.cs" />
+    <Compile Include="Model\InsertionSort.cs" />
+    <Compile Include="Model\MergeSort.cs" />
+    <Compile Include="Model\CountingSort.cs" />
+    <Compile Include="View\Manu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\QuickSort%28HoareSorting%29.cs" />
+    <Compile Include="Model\SortWithList%28Pigeonhole sorting%29.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\LibraryFastDecisions.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

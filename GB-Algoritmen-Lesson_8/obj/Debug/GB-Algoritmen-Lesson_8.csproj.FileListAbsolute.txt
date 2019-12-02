@@ -6,3 +6,11 @@ D:\Программирование\Проекты\GB-Algoritmen-Lesson_8\GB-Alg
 D:\Программирование\Проекты\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.csproj.CopyComplete
 D:\Программирование\Проекты\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.exe
 D:\Программирование\Проекты\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.pdb
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\bin\Debug\GB-Algoritmen-Lesson_8.exe.config
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\bin\Debug\GB-Algoritmen-Lesson_8.exe
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\bin\Debug\GB-Algoritmen-Lesson_8.pdb
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\bin\Debug\LibraryFastDecisions.dll
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.csprojAssemblyReference.cache
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.csproj.CopyComplete
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.exe
+C:\Программирование\GB-Algoritmen-Lesson_8\GB-Algoritmen-Lesson_8\obj\Debug\GB-Algoritmen-Lesson_8.pdb

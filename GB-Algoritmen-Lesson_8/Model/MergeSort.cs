@@ -11,33 +11,58 @@ namespace GB_Algoritmen_Lesson_8
     /// </summary>
     static class MergeSort_
     {
+        static int[] temporaryArray;
+        static int operations = 0;
+
         public static List<int> Sort_MergeSort(this List<int> list)
         {
             var stack = new Stack<MinMaxPosition>();
-            stack.Push(new MinMaxPosition(0, list.Count));
-            var pos = new MinMaxPosition(0,0);
+            operations = 0;
+            temporaryArray = new int[list.Count];
+
+            stack.Push(new MinMaxPosition(0, list.Count - 1));
+            var pos = new MinMaxPosition(0, 0);
             while (stack.Count != 0)
             {
                 pos = stack.Pop();
 
-                if (pos.Min < pos.Max)
+                if (pos.Min != pos.Max)
                 {
-                    if (pos.Max - pos.Min == 1)
-                    {
-                        if (list[pos.Max] < list[pos.Min]) TwoValuesExchange(list, pos.Min, pos.Max);
-                    }
-                    else
-                    {
-                        stack.Push(new MinMaxPosition(pos.Min, pos.Min + (pos.Min - pos.Max) / 2 ));
-                        stack.Push(new MinMaxPosition(pos.Min + 1, pos.Max + (pos.Max - 1) / 2 + 1));
-                    }
+                    var middle = (pos.Min + pos.Max) / 2;
+                    stack.Push(new MinMaxPosition(pos.Min, middle));
+                    stack.Push(new MinMaxPosition(middle + 1, pos.Max));
+                    Merge(list, pos.Min, middle, pos.Max);
                 }
             }
 
             return list;
         }
 
-        static void TwoValuesExchange<T>(List<T> x, int i1, int i2) => (x[i1], x[i2]) = (x[i2], x[i1]);
-
+        static void Merge(List<int> list, int min, int middle, int max)
+        {
+            var leftPos = min;
+            var rightPos = middle + 1;
+            var length = max - min + 1;
+            for (int i = 0; i < length; i++)
+            {
+                if (rightPos > max || (leftPos <= middle && list[leftPos] < list[rightPos]))
+                {
+                    operations++;
+                    temporaryArray[i] = list[leftPos];
+                    leftPos++;
+                }
+                else
+                {
+                    operations++;
+                    temporaryArray[i] = list[rightPos];
+                    rightPos++;
+                }
+            }
+            for (int i = 0; i < length; i++)
+            {
+                operations++;
+                list[i + min] = temporaryArray[i];
+            }
+        }
     }
 }
